@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoNexos</title>
+<style>
+    html{
+            height: 100%;
+    }
+    body{
+
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 1fr;
+        height: 10vh;
+        align-items: center;
+    }
+    header{
+        background-image: url("manos.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 90vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #logoNexos {
+    height: 60%;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+}
+    
+    #spanNav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+    #boton1{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2.5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+    }
+    button{
+        grid-column-start:4;
+    }
+    #parrafoHeader{
+        text-align: center;
+        color: white;
+    }
+    #h1Header{
+        color: white;
+    }
+</style>
+</head>
+<body>
+        <nav>
+             <img src="logoNexos.png" id="logoNexos">
+            <div id="spanNav">
+                <span>Nosotros</span><span>Noticias</span><span>Ayuda</span>
+            </div>
+            <div id="boton1">
+                <button id="">Ingresar</button>
+            </div>
+        </nav>
+        
+        <header>
+            <h1 id="h1Header">¡Actúa para cambiar el mundo!</h2>
+            <p id="parrafoHeader">Fomentamos el vínculo entre empresas y organizaciones civiles para generar un <br> imacto positivo en la sociedad. <br> Descubrí diferentes maneras de involucrar tu organización con la sociedad.</p>
+        </header>
+    </div>    
+    </body>
+</html>
