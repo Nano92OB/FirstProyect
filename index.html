@@ -25,9 +25,16 @@
         align-items: center;
     }
     header{
-        background-image: url("manos.jpg");
+        background: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.467), 
+            rgba(0, 0, 0, 0.596),
+            rgba(0, 0, 0, 0.813)
+        ),
+        url("manos.jpg");
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
         height: 90vh; 
         display: flex;
         align-items: center;
@@ -72,6 +79,7 @@
         color: white;
         font-size: 6.8vh;
     }
+    /*Nosotros*/
     #nosotros{
             color: white;
             margin: 0px;
@@ -115,6 +123,30 @@
         font-weight: 100; 
         
     }
+    /*Nosotros segunda parte*/
+    #oportunity{
+        margin-left: 13%;
+        margin-right: 13%;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    #textOportunity{
+        grid-row: 1/2;
+        justify-content: center;
+    }
+
+    .iconos{
+        border-radius: 5%;
+    }
+    #contenedorIconos{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+
+
 
     /* MEDIA QUERY
     @media (max-width: 844) {
@@ -152,32 +184,34 @@
         </article>
         </div>    
 
-        <div>
-            <article>
+        <div id="oportunity">
+            <article id="textOportunity">
                 <h2>Encuentra las mejores oportunidades</h2>
                 <p>La plataforma cuenta con gran variedad de proyectos locales (sociales,educativos y medioambientales), donde <br>encontraras el que mejor se adapta a la experiencia que estas buscando. <br>Te ayudamos en la coordinación de forma simpre y rápida.</p>
             </article>
-            <div class="iconos" style="background-color:rgb(220, 53, 69);">
-                <img src="icono-mano.png" >
-                <img src="icono-mas.png" >
-                <p>Ser voluntario</p>
+
+            <div id="contenedorIconos">
+                <div class="iconos" style="background-color: rgb(220,53,69);">
+                    <img src="icono-mano.png" >
+                    <img src="icono-mas.png" >
+                    <p>Ser voluntario</p>
+                </div>
+                <div class="iconos" style="background-color: rgb(255, 156, 7);">
+                    <img src="icono-mano-corazon.png">
+                    <img src="icono-mas.png">
+                    <p>Donar</p>
+                </div>
+                <div class="iconos" style="background-color: rgb(40,167,69);">
+                    <img src="icono-reciclar.png">
+                    <img src="icono-mas.png">
+                    <p>Reciclar</p>
+                </div>
+                <div class="iconos" style="background-color: rgb(23,162,184);">
+                    <img src="icono-maletin.png">
+                    <img src="icono-mas.png">
+                    <p>Llamados laborales</p>
+                </div> 
             </div>
-            <div class="iconos" style="background-color: rgb(255, 156, 7);">
-                <img src="icono-mano-corazon.png">
-                <img src="icono-mas.png">
-                <p>Donar</p>
-            </div>
-            <div class="icono" style="background-color: rgb(40,167,69);">
-                <img src="icono-reciclar.png">
-                <img src="icono-mas.png">
-                <p>Reciclar</p>
-            </div>
-            <div class="icono" style="background-color: rgb(23,162,184);">
-                <img src="icono-maletin.png">
-                <img src="icono-mas.png">
-                <p>Llamados laborales</p>
-            </div>
-            
         </div>
     </body>
 </html>
