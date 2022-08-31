@@ -128,21 +128,37 @@
         margin-left: 13%;
         margin-right: 13%;
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 15% 35% 35% 15%;
+        height: 90vh;
     }
     #textOportunity{
-        grid-row: 1/2;
+        grid-row: 2/3;
         justify-content: center;
+        text-align: center;
     }
 
     .iconos{
         border-radius: 5%;
+        width: 240px;
+        text-align: center;
+        font-size: larger;
+    }
+    .iconos div{
+        display: flex;
+        justify-content: space-around;
     }
     #contenedorIconos{
         display: flex;
         justify-content: space-between;
-
+        grid-row: 3/4;
+        color: white;
+        text-align: justify;
     }
+    .tamIcono{
+        height: 25px;
+        margin-top: 7%;
+    }
+    
 
 
 
@@ -192,23 +208,31 @@
 
             <div id="contenedorIconos">
                 <div class="iconos" style="background-color: rgb(220,53,69);">
-                    <img src="icono-mano.png" >
-                    <img src="icono-mas.png" >
+                    <div class="tamIcono">
+                        <img src="icono-mano.png" >
+                        <img src="icono-mas.png" >
+                    </div>
                     <p>Ser voluntario</p>
                 </div>
                 <div class="iconos" style="background-color: rgb(255, 156, 7);">
-                    <img src="icono-mano-corazon.png">
-                    <img src="icono-mas.png">
+                    <div class="tamIcono">
+                        <img src="icono-mano-corazon.png">
+                        <img src="icono-mas.png">
+                    </div>    
                     <p>Donar</p>
                 </div>
                 <div class="iconos" style="background-color: rgb(40,167,69);">
-                    <img src="icono-reciclar.png">
-                    <img src="icono-mas.png">
+                    <div class="tamIcono">
+                        <img src="icono-reciclar.png">
+                        <img src="icono-mas.png">
+                    </div>
                     <p>Reciclar</p>
                 </div>
                 <div class="iconos" style="background-color: rgb(23,162,184);">
-                    <img src="icono-maletin.png">
-                    <img src="icono-mas.png">
+                    <div class="tamIcono">
+                        <img src="icono-maletin.png">
+                        <img src="icono-mas.png">
+                    </div>
                     <p>Llamados laborales</p>
                 </div> 
             </div>
