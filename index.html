@@ -210,24 +210,30 @@
         color: black;
         display: grid;
         grid-template-rows: 20% 20% 50% 10%; 
+        grid-template-columns: 5% 90% 5%;
         justify-content: center;
+        
     }
     .gridNot1{
+        display: flex;
         grid-row: 1/2;
         padding-top: 20px;
         font-size: 12px;
+        grid-column: 2/3;
     }
     .gridNot2{
         grid-row: 2/3;
         font-size: 11px;
-        text-align: center;
+        text-align: left;
+        grid-column: 2/3;
     }
     .gridNot3{
         grid-row: 3/4;
         text-align: start;
         font-size: 8px;
         margin-left: 30px;
-
+        grid-column: 2/3;
+        margin-left: 0%;
     }
     .gridNot4{
         grid-row: 4/5;
@@ -236,12 +242,18 @@
         justify-content: end;
         align-content: center;
         margin-right: 10px ;
+        grid-column: 2/3;
     }
     .gridNot4 img{
         height: 9px;
+        margin-right: 10px;
     }
     .gridNot4Img{
+        margin-bottom: 10px;
         margin-right: 12px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
 
     }
     .alignItem1{
@@ -250,10 +262,15 @@
     }
     .alignItem2{
         display: inline;
+        display: flex;
+        justify-content: end;
 
     }
     .gridNot1 img{
         height: 12px;
+    }
+    .verMas{
+        text-align: right;
     }
     
 
@@ -353,11 +370,10 @@
                         <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
                     </div>
                     <div class="gridNot4">
-                        <div class="gridNot4Img"><img src="icono-flecha.png"></div>
-                        <div clas>ver mas</div>
-                    </div>                   
+                        <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
+                    </div>
                 </div>
-                </div>
+            </div>
                 <div>
                     <div class="tamFotNot">
                         <img src="foto1noticias.jpg">
@@ -374,11 +390,10 @@
                             <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
                         </div>
                         <div class="gridNot4">
-                            <div class="gridNot4Img"><img src="icono-flecha.png"></div>
-                            <div clas>ver mas</div>
+                            <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
                         </div>                   
                     </div>
-                    </div>
+                </div>
                     <div>
                         <div class="tamFotNot">
                             <img src="foto1noticias.jpg">
@@ -395,11 +410,10 @@
                                 <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
                             </div>
                             <div class="gridNot4">
-                                <div class="gridNot4Img"><img src="icono-flecha.png"></div>
-                                <div clas>ver mas</div>
+                                <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
                             </div>                   
                         </div>
-                        </div>
+                    </div>
                         <div>
                             <div class="tamFotNot">
                                 <img src="foto1noticias.jpg">
@@ -416,11 +430,10 @@
                                     <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
                                 </div>
                                 <div class="gridNot4">
-                                    <div class="gridNot4Img"><img src="icono-flecha.png"></div>
-                                    <div clas>ver mas</div>
+                                    <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
                                 </div>                   
                             </div>
-                            </div>
+                        </div>
             </div>
         </div> 
     </body>
