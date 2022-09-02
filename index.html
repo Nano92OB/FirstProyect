@@ -322,6 +322,32 @@
         grid-row: 4/5;
     }
 
+    #footerId{
+        color: white;
+        height: 25vh;
+        display: grid;
+        grid-template-columns: 10% 10% 4% 10% 44% 9% 13% ;
+        grid-template-rows: 10% 80% 10%;
+        background: linear-gradient(45deg, rgb(28,120,253),rgb(82,39,204));
+    }
+    #nexosF{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+    }
+    #textF{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        height: 100%;
+        width: 100%;
+    }
+    #redesSocialesF{
+        grid-column: 6/7;
+        grid-row: 2/3;
+        height: 100%;
+        width: 100%;
+    }
+
 
     /* MEDIA QUERY
     @media (max-width: 844) {
@@ -493,21 +519,50 @@
             </div>
                 <div id="formContacto">
                     <form id="formInsideContacto">
-                    <div id="form1" style = "float: left">
-                        <label for="fname">Nombre Completo</label><br>
-                        <input class="inputInside" type="text" size="28" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
-                        <label for="lname">Mail</label><br>
-                        <input class="inputInside" type="text" size="28" id="lname" name="lname" placeholder="contacto@mail"><br><br>
-                    </div>
-                    <div id="form2" style = "float: right">
-                        <label for="textArea">Mensaje</label><br>
-                        <textarea class="inputInside" name="Mensaje" id="textArea" cols="38" rows="6" placeholder="Mensaje"></textarea>
-                    </div>
-                  </form> 
+                        <div id="form1" style = "float: left">
+                            <label for="fname">Nombre Completo</label><br>
+                            <input class="inputInside" type="text" size="28" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
+                            <label for="lname">Mail</label><br>
+                            <input class="inputInside" type="text" size="28" id="lname" name="lname" placeholder="contacto@mail"><br><br>
+                        </div>
+                        <div id="form2" style = "float: right">
+                            <label for="textArea">Mensaje</label><br>
+                            <textarea class="inputInside" name="Mensaje" id="textArea" cols="38" rows="6" placeholder="Mensaje"></textarea>
+                        </div>
+                    </form> 
                 </div>
-                <div id="centerButtonContact">   
-                    <button id="botonContacto">Enviar</button>
-                </div>
+            <div id="centerButtonContact">   
+                <button id="botonContacto">Enviar</button>
+            </div>
         </div>
+        <footer id="footerId">
+            <img id="nexosF" src="logo-blanco.png">
+            <div id="textF">
+                <p>Nosotros</p>
+                <p>Noticias</p>
+                <p>Contacto</p>
+                <p>Terminos y condiciones</p>
+            </div>
+
+            <div id="redesSocialesF">
+                <p>Seguinos!</p>
+                <div>
+                    <div>
+                        <img src="">
+                    </div>
+                    <div>
+                        <img src="">
+                    </div>
+                    <div>
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+           
+            
+            
+            
+            
+        </footer>
     </body>
 </html>
