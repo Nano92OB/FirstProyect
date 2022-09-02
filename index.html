@@ -272,7 +272,12 @@
     .verMas{
         text-align: right;
     }
-    
+    #contacto{
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 13% 35% 4% 35% 13%;
+        grid-template-rows:17.5% 17.5% 17.5% 17.5% 30%;
+    }
 
 
     /* MEDIA QUERY
@@ -436,5 +441,25 @@
                         </div>
             </div>
         </div> 
+        <div id="contacto">
+            <div id="laptop">
+                <img src="laptop-escritorio.jpg">
+            </div>
+            <div id="contacto">
+                <h2>Contacto</h2>
+                <form action="/action_page.php">
+                    <div id="form1">
+                    <label for="fname">Nombre Completo</label><br>
+                    <input type="text" id="fname" name="fname" value="Aqui su nombre"><br>
+                    <label for="lname">Mail</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br><br>
+                    </div>
+                    <div id="form2">
+                        <label for="textArea">Mensaje</label>
+                        <textarea name="Mensaje" id="textArea" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+                  </form>                  
+            </div>    
+        </div>
     </body>
 </html>
