@@ -349,8 +349,66 @@
         height: 100%;
         width: 100%;
     }
+    .modal{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: #010111bd;
+        display: flex;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        pointer-events: none;
+        max-height: 0;
+        transition: max-height 500ms;
+        height: 100vh;
+        }
+        #modal:target {
+        max-height: 100%;
+        height: 100%;
+        pointer-events: auto;
+        }
 
-
+       
+    
+    .contenidoModal{
+        width: 90%;
+        max-width: 600px;
+        background-color: white;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+    .modalIzquierdo{
+        grid-column: 1/2;
+    }
+    .modalDerecho{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: 10% 20% 35% 35%;
+        grid-template-columns: 5% 90% 5%;
+    }
+    #modalImagen{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 2px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    #modalTitulo{
+        grid-row: 2/3;
+    }
+    #divEmpresa{
+        grid-row: 3/4;
+    }
+    #divOrganizacion{
+        grid-row: 4/5;
+    }
     /* MEDIA QUERY
     @media (max-width: 844) {
         
@@ -360,13 +418,34 @@
 </style>
 </head>
 <body>
+    <section class="modal">
+        <div class="contenidoModal">
+        <div class="modalIzquierdo">
+            <img src="imagen-modal.JPG" id="modalImagen">
+        </div>
+        <div class="modalDerecho">
+            <h2 id="modalTitulo">Registrar</h2>
+            <div id="divEmpresa">
+                <h3 class="modalH3">Mi Empresa</h3>
+                <p class="modalParrafo">asdasdasd</p>
+                <img src="icono-flecha.png">
+            </div>
+            <div id="divOrganizacion">
+                <h3 class="modalH3">Mi Organizacion</h3>
+                <p class="modalParrafo">asdasdasdasdas</p>
+                <img src="icono-flecha.png">
+            </div>
+            <a href="#" class="cerrarModal">X</a>
+        </div>
+        </div>
+    </section>
         <nav>
              <img src="logoNexos.png" id="logoNexos">
                 <div id="spanNav">
                     <span>Nosotros</span><span>Noticias</span><span>Ayuda</span>
                 </div>
             <div id="boton1">
-                <button>Ingresar</button>
+                <a href="#modal">Ingresar</a>
             </div>
         </nav>
         
@@ -560,11 +639,8 @@
                     </div>
                 </div>
             </div>
-           
-            
-            
-            
-            
         </footer>
-    </body>
+
+        <script src="main.js"></script>
+</body>
 </html>
