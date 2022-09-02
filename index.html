@@ -274,7 +274,7 @@
         text-align: right;
     }
     #contacto{
-        height: 70vh;
+        height: 90vh;
         display: grid;
         grid-template-columns: 8% 41.5% 1% 41.5% 8%;
         grid-template-rows:17.5% 12.5% 35% 5% 30%;
@@ -313,10 +313,13 @@
         border-radius: 5px;
     }
     #botonContacto{
+        width: 100px;
+    }
+    #centerButtonContact{
+        display: flex;
+        justify-content: center;
         grid-column: 4/5;
         grid-row: 4/5;
-        width: 15%;
-        height: 15%;
     }
 
 
@@ -492,17 +495,19 @@
                     <form id="formInsideContacto">
                     <div id="form1" style = "float: left">
                         <label for="fname">Nombre Completo</label><br>
-                        <input class="inputInside" type="text" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
+                        <input class="inputInside" type="text" size="28" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
                         <label for="lname">Mail</label><br>
-                        <input class="inputInside" type="text" id="lname" name="lname" placeholder="contacto@mail"><br><br>
+                        <input class="inputInside" type="text" size="28" id="lname" name="lname" placeholder="contacto@mail"><br><br>
                     </div>
                     <div id="form2" style = "float: right">
                         <label for="textArea">Mensaje</label><br>
                         <textarea class="inputInside" name="Mensaje" id="textArea" cols="38" rows="6" placeholder="Mensaje"></textarea>
                     </div>
                   </form> 
-                </div>   
-                <button id="botonContacto">Enviar</button>
+                </div>
+                <div id="centerButtonContact">   
+                    <button id="botonContacto">Enviar</button>
+                </div>
         </div>
     </body>
 </html>
