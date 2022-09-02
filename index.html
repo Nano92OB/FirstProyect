@@ -275,8 +275,26 @@
     #contacto{
         height: 90vh;
         display: grid;
-        grid-template-columns: 13% 35% 4% 35% 13%;
-        grid-template-rows:17.5% 17.5% 17.5% 17.5% 30%;
+        grid-template-columns: 13% 36.5% 1% 36.5% 13%;
+        grid-template-rows:17.5% 10% 37.5% 5% 30%;
+    }
+    #laptop{
+        grid-column: 2/3;
+        grid-row: 2/5;
+    }
+    #laptop img{
+        height: 100%;
+        width: 100%;
+    }
+    #tituloContacto{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    #formContacto{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        display: flex;
     }
 
 
@@ -445,21 +463,23 @@
             <div id="laptop">
                 <img src="laptop-escritorio.jpg">
             </div>
-            <div id="contacto">
-                <h2>Contacto</h2>
-                <form action="/action_page.php">
-                    <div id="form1">
-                    <label for="fname">Nombre Completo</label><br>
-                    <input type="text" id="fname" name="fname" value="Aqui su nombre"><br>
-                    <label for="lname">Mail</label><br>
-                    <input type="text" id="lname" name="lname" value=""><br><br>
+                <h2 id="tituloContacto">Contacto</h2>
+            
+                <div id="formContacto">
+                    <form>
+                    <div id="form1" style = "float: left">
+                        <label for="fname">Nombre Completo</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
+                        <label for="lname">Mail</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="contacto@mail"><br><br>
                     </div>
-                    <div id="form2">
+                    <div id="form2" style = "float: right">
                         <label for="textArea">Mensaje</label>
-                        <textarea name="Mensaje" id="textArea" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <textarea name="Mensaje" id="textArea" cols="20" rows="7" placeholder="Mensaje"></textarea>
                     </div>
-                  </form>                  
-            </div>    
+                  </form> 
+                </div>                   
+                
         </div>
     </body>
 </html>
