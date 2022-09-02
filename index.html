@@ -101,7 +101,8 @@
             max-height: 100%;
             grid-column:4/5;
             grid-row: 4/5;
-            width: 700px;     
+            width: 700px;   
+            object-fit: cover;  
         }
     #cuadrante1 {
         grid-column:4/5;
@@ -273,10 +274,10 @@
         text-align: right;
     }
     #contacto{
-        height: 90vh;
+        height: 70vh;
         display: grid;
-        grid-template-columns: 13% 36.5% 1% 36.5% 13%;
-        grid-template-rows:17.5% 10% 37.5% 5% 30%;
+        grid-template-columns: 8% 41.5% 1% 41.5% 8%;
+        grid-template-rows:17.5% 12.5% 35% 5% 30%;
     }
     #laptop{
         grid-column: 2/3;
@@ -285,16 +286,37 @@
     #laptop img{
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
     #tituloContacto{
         grid-column: 4/5;
         grid-row: 2/3;
         text-align: center;
     }
+    #tituloContacto h2{
+        font-size: 40px;
+        
+    }
     #formContacto{
         grid-column: 4/5;
         grid-row: 3/4;
         display: flex;
+    }
+
+    #formInsideContacto{
+        height: 100%;
+        width: 100%;
+        margin-top: 55px
+    }
+
+    .inputInside{
+        border-radius: 5px;
+    }
+    #botonContacto{
+        grid-column: 4/5;
+        grid-row: 4/5;
+        width: 15%;
+        height: 15%;
     }
 
 
@@ -463,23 +485,24 @@
             <div id="laptop">
                 <img src="laptop-escritorio.jpg">
             </div>
-                <h2 id="tituloContacto">Contacto</h2>
-            
+            <div id="tituloContacto">
+                <h2>Contacto</h2>
+            </div>
                 <div id="formContacto">
-                    <form>
+                    <form id="formInsideContacto">
                     <div id="form1" style = "float: left">
                         <label for="fname">Nombre Completo</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
+                        <input class="inputInside" type="text" id="fname" name="fname" placeholder="Aqui su nombre"><br><br>
                         <label for="lname">Mail</label><br>
-                        <input type="text" id="lname" name="lname" placeholder="contacto@mail"><br><br>
+                        <input class="inputInside" type="text" id="lname" name="lname" placeholder="contacto@mail"><br><br>
                     </div>
                     <div id="form2" style = "float: right">
-                        <label for="textArea">Mensaje</label>
-                        <textarea name="Mensaje" id="textArea" cols="20" rows="7" placeholder="Mensaje"></textarea>
+                        <label for="textArea">Mensaje</label><br>
+                        <textarea class="inputInside" name="Mensaje" id="textArea" cols="38" rows="6" placeholder="Mensaje"></textarea>
                     </div>
                   </form> 
-                </div>                   
-                
+                </div>   
+                <button id="botonContacto">Enviar</button>
         </div>
     </body>
 </html>
