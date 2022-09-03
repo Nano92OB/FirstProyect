@@ -142,8 +142,7 @@
     .iconos{
         border-radius: 5%;
         width: 240px;
-        text-align: center;
-        font-size:x-large;
+        font-size: 30px;
     
     }
     .iconos div{
@@ -159,16 +158,21 @@
     }
     .tamIconoCruz{
         height: 20px;
-        margin-top: 7%;
+        margin-top: 12%;
+    }
+    #cruzRoja{
+        height: 20px;
+        margin-right: -6%;
     }
     .tamIcono{
-        height: 60px;
+        height: 70px;
         margin-top: 13%;
     }
 
     .iconos p{
         margin-top: 16%;
-        margin-right: 40%;
+        margin-left: 10%;
+        
     }
     #noticias{
         background-color:rgb(82, 152,255);
@@ -192,7 +196,7 @@
         grid-column-gap: 15px;
     }
     .carrusel div{
-    width: 100%;
+        width: 100%;
     }
     .tamFotNot{
         width: 15%;
@@ -200,6 +204,7 @@
         border-radius: 5%;
     }
     .tamFotNot img{
+        object-fit: cover;
         width: 100%;
         border-radius: 5%;
         height: 105%;
@@ -232,7 +237,7 @@
     .gridNot3{
         grid-row: 3/4;
         text-align: start;
-        font-size: 8px;
+        font-size: 9px;
         margin-left: 30px;
         grid-column: 2/3;
         margin-left: 0%;
@@ -508,186 +513,9 @@
     }
 
         /*MEDIA QUERY*/
-
-    @media (min-width:390px){
-        body{
-            width: 100%;
-        }
-        /*media query - oportunidades*/
-        #oportunity{
-            width: 100%;
-            height: 100%;
-            flex-direction: column;
-            justify-content: center;
-            margin:5% 0% 5% 0%;
-            display: block;
-        }
-        #contenedorIconos{
-            height: 100%;
-            width: 100%;
-            flex-direction: column;
-            gap: 10px;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5%;
-        }
-        .iconos{
-            width: 50%;
-            height: 22vh;
-        }
-        #textOportunity{
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        /*mediaquery - nav bar*/
-        #mediaQueryNav{
-            height: 90%;
-            /*agregar id en etiqueta <nav>*/
-        }
-        #logoNexos{
-            width: 100%;
-            height: 50%;
-            margin-left: 18%;
-        }
-        #spanNav{
-            width: 100%;
-            justify-content: space-between;
-            font-size: xx-small;
-            margin-left: 35%;
-        }
-        #boton1{
-            /*verficar con button*/
-            width: 100%;
-            font-size: xx-small;
-            justify-content: center;
-            display: block;
-            margin-left: 50%;
-        }
-        .colorBoton{
-            /*agregar class <button> o cambiar por id button*/
-            border-radius: 4px 4px 4px 4px;
-            background-color: rgb(82, 39, 204);
-            border-color: white;
-            color: white;
-        }
-        /*media query - header*/
-        header{
-            height: 30vh;
-            text-align: center;
-            justify-content: center;
-        }
-
-        #h1Header{
-            text-align: center;
-            justify-content: center;
-            font-size: 27px;
-            font-weight: lighter;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        #parrafoHeader{
-            text-align: center;
-            justify-content: center;
-            font-size: 10px;
-            font-weight: lighter;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        /*mediaQuery - Nosotros*/
-        #nosotros{
-            height: auto;
-            grid-template-columns: 100%;
-            grid-template-rows: 25% 25% 25% 25%;
-        }
-        #oficina{
-            margin-right: 13%;
-            margin-left: 13%;
-            align-self: center;
-            width: 75%;
-            height: 75%;
-            grid-row: 1/2;
-            grid-column: 1;
-        }
-        #cuadrante1{
-            margin-left: 13%;
-            margin-right: 13%;
-            text-align: center;
-            grid-row: 2/3;
-            grid-column: 1;
-            justify-content: center;
-            font-weight: lighter;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        #voluntariado{
-            margin-left: 13%;
-            margin-right: 13%;
-            align-self: center;
-            width: 75%;
-            height: 75%;
-            grid-row: 3/4;
-            grid-column: 1;
-        }
-        #cuadrante2{
-            margin-left: 13%;
-            margin-right: 13%;
-            text-align: center;
-            grid-row: 4/5;
-            grid-column: 1;
-            justify-content: center;
-            font-weight: lighter;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        #titulo1{
-            font-size: x-large;
-        }
-        #titulo2{
-            font-size: x-large;
-        }
-        #nosotros p{
-            font-size: x-small ;
-        }
-        /*mnediaQuery - Noticias*/
-        #noticias{
-            width: 100%;
-            height: 100%;
-            flex-direction: column;
-            justify-content: center;
-            display: block;
-        }
-        .carrusel{
-            align-items: center;
-            display: flex;
-            height: 100%;
-            width: 100%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        /*clase nueva carrusel*/
-        .itemCarrusel{
-            width: 10vh;
-            height: 10vh;
-        }
-        .textCarrusel{
-
-        }
-        .tamFotNot{
-            
-        }
-
-        
-
-
-
-
-
-
-    }
-    
+  
 </style>
+
 </head>
 <body>
     <section class="modal" >
@@ -723,13 +551,13 @@
         </div>
         </div>
     </section>
-        <nav>
+        <nav id="mediaQueryNav">
              <img src="logoNexos.png" id="logoNexos">
                 <div id="spanNav">
-                    <span><a href="#nosotros">Nosotros</a></span><span><a href="#noticias">Noticias</a></span><span><a href="#contacto">Ayuda</a></span>
+                    <span><a style="color: black; text-decoration: none" href="#nosotros"><b>Nosotros</b></a></span><span><a style="color: black; text-decoration: none" href="#noticias"><b>Noticias</b></a></span><span><a style="color: black; text-decoration: none" href="#contacto"><b>Ayuda</b></a></span>
                 </div>
             <div id="boton1">
-                <button id="innerModal">Ingresar</button>
+                <button class="colorBotonMedia" id="innerModal">Ingresar</button>
             </div>
         </nav>
         
@@ -760,7 +588,7 @@
                 <div class="iconos" style="background-color: rgb(220,53,69);">
                     <div>
                         <img src="icono-mano.png" class="tamIcono">
-                        <img src="icono-mas.png" class="tamIconoCruz" >
+                        <img id="cruzRoja" src="icono-mas.png" class="tamIconoCruz" >
                     </div>
                     <p>Ser voluntario</p>
                 </div>
@@ -790,32 +618,12 @@
         <div id="noticias">
             <div id="letreroNoticias">
                 <h1>Noticias</h1>
-                <p><u>ver todas</u></p>
+                <p><a style="color: white;" href="https://www.elmundo.es/t/no/noticias-felices.html" target="_blank">ver todas</a></p>
             </div>
             <div class="carrusel">
-                <div>
-                <div class="tamFotNot">
-                    <img src="foto1noticias.jpg">
-                </div>
-                <div class="textCarrusel">
-                    <div class="gridNot1">
-                        <div class="alignItem1"><img src="icono-calendario.png">10/08/2022</div>
-                        <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
-                    </div>
-                    <div class="gridNot2">
-                        <h3>Titulo Noticia</h3>
-                    </div>
-                    <div class="gridNot3">
-                        <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
-                    </div>
-                    <div class="gridNot4">
-                        <div class="gridNot4Img"><img src="icono-flecha.png"><a href="https://cursos.senpaiacademy.com/path-player?courseid=fsdb5-2022&unit=630d38d07c79ee23577697a6Unit" target="_blank" >ver mas</a></div>
-                    </div>
-                </div>
-            </div>
-                <div>
+                <div class="itemCarrusel">
                     <div class="tamFotNot">
-                        <img src="foto1noticias.jpg">
+                        <img src="felicidad.jpg">
                     </div>
                     <div class="textCarrusel">
                         <div class="gridNot1">
@@ -823,56 +631,76 @@
                             <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
                         </div>
                         <div class="gridNot2">
-                            <h3>Titulo Noticia</h3>
+                            <h3>Filosofía para lograr la felicidad</h3>
                         </div>
                         <div class="gridNot3">
-                            <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
+                            <p>De Aristóteles a Bauman: los secretos de la filosofía para lograr la felicidad... <br>Los antiguos griegos lo denominaban "eudaimonía", un término bastante escurridizo que incluye el concepto de suerte...</p>
                         </div>
                         <div class="gridNot4">
-                            <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
+                            <div class="gridNot4Img"><img src="icono-flecha.png"><a href="https://www.elmundo.es/papel/historias/2019/02/01/5c52e8e521efa0292e8b4661.html" target="_blank" >ver mas</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemCarrusel">
+                    <div class="tamFotNot">
+                        <img src="cafe.jpg">
+                    </div>
+                    <div class="textCarrusel">
+                        <div class="gridNot1">
+                            <div class="alignItem1"><img src="icono-calendario.png">10/08/2022</div>
+                            <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
+                        </div>
+                        <div class="gridNot2">
+                            <h3>Beba café y su salud se lo agradecerá</h3>
+                        </div>
+                        <div class="gridNot3">
+                            <p>Una segunda o incluso una tercera taza de café al día pueden ayudarle no sólo a sobrellevar su cansancio durante el día, sino a mucho más. Así lo refleja un estudio realizado por investigadores de la Escuela de Salud Pública de Harvard...</p>
+                        </div>
+                        <div class="gridNot4">
+                            <div class="gridNot4Img"><img src="icono-flecha.png"><a href="https://www.elmundo.es/salud/2015/11/17/5649db0a46163ff8348b4603.html" target="_blank">ver mas</a></div>
                         </div>                   
                     </div>
                 </div>
-                    <div>
-                        <div class="tamFotNot">
-                            <img src="foto1noticias.jpg">
-                        </div>
-                        <div class="textCarrusel">
-                            <div class="gridNot1">
-                                <div class="alignItem1"><img src="icono-calendario.png">10/08/2022</div>
-                                <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
-                            </div>
-                            <div class="gridNot2">
-                                <h3>Titulo Noticia</h3>
-                            </div>
-                            <div class="gridNot3">
-                                <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
-                            </div>
-                            <div class="gridNot4">
-                                <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
-                            </div>                   
-                        </div>
+                <div class="itemCarrusel">
+                    <div class="tamFotNot">
+                        <img src="ovni.jpg">
                     </div>
-                        <div>
-                            <div class="tamFotNot">
-                                <img src="foto1noticias.jpg">
-                            </div>
-                            <div class="textCarrusel">
-                                <div class="gridNot1">
-                                    <div class="alignItem1"><img src="icono-calendario.png">10/08/2022</div>
-                                    <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
-                                </div>
-                                <div class="gridNot2">
-                                    <h3>Titulo Noticia</h3>
-                                </div>
-                                <div class="gridNot3">
-                                    <p>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia <br>contenido de la noticiacontenido de la noticiacontenido de la noticia</p>
-                                </div>
-                                <div class="gridNot4">
-                                    <div class="gridNot4Img"><img src="icono-flecha.png">ver mas</div>
-                                </div>                   
-                            </div>
+                    <div class="textCarrusel">
+                        <div class="gridNot1">
+                            <div class="alignItem1"><img src="icono-calendario.png">10/08/2022</div>
+                            <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
                         </div>
+                        <div class="gridNot2">
+                            <h3>Las fascinantes nubes 'ovni' en Sudáfrica</h3>
+                        </div>
+                        <div class="gridNot3">
+                            <p>Como si de una invasión alienígena se tratase, el pasado domingo 8 de noviembre el cielo de Ciudad del Cabo (Sudáfrica) se llenó de asombrosas nubes con forma de ovni y los habitantes de la ciudad, sorprendidos e intrigados, corrieron a inmortalizar el momento para compartirlo en las redes sociales...</p>
+                        </div>
+                        <div class="gridNot4">
+                            <div class="gridNot4Img"><img src="icono-flecha.png"><a href="https://www.elmundo.es/ciencia/2015/11/11/56431032ca4741634e8b465d.html" target="_blank">ver mas</a></div>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="itemCarrusel">
+                    <div class="tamFotNot">
+                        <img src="inovacion.jpg">
+                    </div>
+                    <div class="textCarrusel">
+                        <div class="gridNot1">
+                            <div class="alignItem1"><img src="icono-calendario.png">10/08/2022</div>
+                            <div class="alignItem2"><img src="icono-reloj.png">4 min</div>
+                        </div>
+                        <div class="gridNot2">
+                            <h3>Del país del paro a la meca de la innovación</h3>
+                        </div>
+                        <div class="gridNot3">
+                            <p>Fueron a Silicon Valley dispuestos a dejarse sorprender por el sueño americano 2.0. Atravesaron el planeta para conocer de primera mano la leyenda que reúne, en una cafetería cualquiera de Palo Alto, a un joven talento con un inversor multimillonario dispuesto a apostar por su proyecto...</p>
+                        </div>
+                        <div class="gridNot4">
+                            <div class="gridNot4Img"><img src="icono-flecha.png"><a href="https://www.elmundo.es/f5/campus/2015/11/10/56424dc3268e3efd608b460a.html" target="_blank">ver mas</a></div>
+                        </div>                   
+                    </div>
+                </div>
             </div>
         </div> 
         <div id="contacto">
