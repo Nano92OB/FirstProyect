@@ -12,6 +12,7 @@
     html{
             height: 100%;
             font-family: 'DM Sans', sans-serif;
+            scroll-behavior: smooth;
     }
     body {
         margin:0;
@@ -356,14 +357,14 @@
         right:0;
         bottom:0;
         background-color: #010111bd;
-        display: flex;
         width: 100%;
         justify-items: center;
         align-items: center;
-        pointer-events: none;
         max-height: 0;
         transition: max-height 500ms;
         height: 100vh;
+        display:none;
+        pointer-events: none;
         }
         #modal:target {
         max-height: 100%;
@@ -371,7 +372,20 @@
         pointer-events: auto;
         }
 
-       
+    #closeModal{
+        grid-row: 1/2;
+        grid-column: 4/5;
+        position: relative;
+        right: 10px;
+        top: 10px;
+        font-size: 17px;
+        transition: opacity .6s;
+    }
+    .modalShow{
+       display: flex;
+        pointer-events: unset;
+        transition: opacity .6s;
+    }
     
     .contenidoModal{
         width: 90%;
@@ -383,6 +397,7 @@
         justify-items: center;
         align-items: center;
         border-radius: 25px;
+        padding: 2px;
     }
     .modalIzquierdo{
         grid-column: 1/2;
@@ -409,6 +424,8 @@
         grid-column: 3/4;
         text-align: center;
         font-size: xx-large;
+        position: fixed;
+        margin-left: 90px;
     }
     #divOrganizacion{
         grid-row: 4/5;
@@ -433,18 +450,18 @@
         grid-column: 3/4;
         background-color: aliceblue;
         color: rgb(28,120,253);
-        text-align: center;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         width: 200px;
     }
     #divEmpresa h3{
         font-size: smaller;
+        margin-left: 10px;
     }
     #divEmpresa p{
         color: black;
         font-size: x-small;
-        text-align:center
+        margin-left: 10px;
     }
     #divEmpresa div img{
         position: relative;
@@ -477,30 +494,24 @@
         display: flex;
         font-size: smaller;
         color: rgb(82,39,204);
-        justify-content: center;
+        margin-left: 10px;
     }
     #divOrganizacion p{
         color: black;
         font-size: x-small;
-        text-align:center
+        margin-left: 10px;
     }
     #divOrganizacion div img{
         position: relative;
         right: 10px;
         bottom: 10px;
     }
-    #closeModal{
-        grid-row: 1/2;
-        grid-column: 4/5;
-        position: relative;
-        right: 10px;
-        top: 10px;
-    }
+   
     
 </style>
 </head>
 <body>
-    <section class="modal">
+    <section class="modal" >
         <div class="contenidoModal">
         <div class="modalIzquierdo">
             <img src="imagen-modal.JPG" id="modalImagen">
@@ -536,10 +547,10 @@
         <nav>
              <img src="logoNexos.png" id="logoNexos">
                 <div id="spanNav">
-                    <span>Nosotros</span><span>Noticias</span><span>Ayuda</span>
+                    <span><a href="#nosotros">Nosotros</a></span><span><a href="#noticias">Noticias</a></span><span><a href="#contacto">Ayuda</a></span>
                 </div>
             <div id="boton1">
-                <button>Ingresar</button>
+                <button id="innerModal">Ingresar</button>
             </div>
         </nav>
         
@@ -713,10 +724,10 @@
         <footer id="footerId">
             <img id="nexosF" src="logo-blanco.png">
             <div id="textF">
-                <p>Nosotros</p>
-                <p>Noticias</p>
-                <p>Contacto</p>
-                <p>Terminos y condiciones</p>
+                <p><a href="#nosotros">Nosotros</a></p>
+                <p><a href="#noticias">Noticias</a></p>
+                <p><a href="#contacto">Contacto</a></p>
+                <p><a href="https://www.iubenda.com/es/help/37616-que-son-los-terminos-y-condiciones-y-para-que-sirven#:~:text=Los%20T%C3%A9rminos%20y%20Condiciones%20representan,contenido%20de%20forma%20legalmente%20vinculante." target="_blank">Terminos y condiciones</a></p>
             </div>
 
             <div id="redesSocialesF">
@@ -738,3 +749,4 @@
         <script src="main.js"></script>
 </body>
 </html>
+
